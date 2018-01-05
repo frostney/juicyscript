@@ -7,7 +7,7 @@ const operatorValues = Object.keys(Operator).map(x => Operator[x]);
 const escapedOperatorValues = Object.keys(Operator).map(x => escapeStringRegexp(Operator[x]))
 const isOperator = (token: string): boolean => operatorValues.indexOf(token) >= 0
 
-const parse = (text) => {
+const parse = (text: string) => {
   const lines = text.split('\n');
   const regex = new RegExp('(' + escapedOperatorValues.join('|') + ')', 'g');
 
