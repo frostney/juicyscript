@@ -34,3 +34,7 @@ named.hello // 'world'
 ```
 answer = () -> 42
 ```
+
+## License
+
+MIT
