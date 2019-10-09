@@ -46,4 +46,4 @@ const parse = (text: string) => {
 }
 
 
-console.log(parse(`hello = 'world'\nnum=5\nsum = 2 + 4\nanswer = () -> 42`));
+console.log(parse(`hello = 'world'\nnum=5\nsum = 2 + 4\nanswer = () -> 42\nanswer()`));
