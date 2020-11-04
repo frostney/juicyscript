@@ -4,6 +4,7 @@
   "description": "Sweet experimental scripting language",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node --extensions '.ts' juicyscript.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +18,12 @@
     "url": "https://github.com/frostney/juicyscript/issues"
   },
   "homepage": "https://github.com/frostney/juicyscript#readme",
-  "dependencies": {
-    "escape-string-regexp": "^1.0.5",
-    "stringreader": "^1.1.0"
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3"
   }
 }
