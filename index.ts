@@ -3,7 +3,7 @@ import { Token, TokenType } from "./token";
 
 import parse from "./parser";
 
-const operatorValues = Object.keys(Operator).map(x => Operator[x]);
+const operatorValues = Object.keys(Operator).map((x) => Operator[x]);
 const isOperator = (token: string): boolean =>
   operatorValues.indexOf(token) >= 0;
 
