@@ -101,6 +101,7 @@ export class Parser {
       );
     } else {
       // TODO: Assignment
+      return new ASTNode(ASTNodeType.Identifier);
     }
   }
 
