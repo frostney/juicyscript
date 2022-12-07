@@ -4,7 +4,7 @@ Sweet experimental scripting language
 
 ## Philosophy
 
-JuicyScript is a Lua-inspired scripting language
+JuicyScript is a scripting language inspired by Lua, Ruby and JavaScript
 
 ## Variables
 
@@ -64,17 +64,17 @@ name // 'this'
 #### Single-line functions
 
 ```
-answer = () -> 42
+answer = () => 42
 answer()
 ```
 
 #### Multi-line functions
 
 ```
-logPerson = (person) ->
+logPerson = (person) => {
   print(person.name)
   print(person.age)
-end
+}
 
 logPerson(name: 'me', age: 19)
 ```

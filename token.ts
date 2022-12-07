@@ -1,12 +1,20 @@
+export class Token {
+  type: TokenType;
+  value: string;
+
+  constructor(type: TokenType, value: string) {
+    this.type = type;
+    this.value = value;
+  }
+}
+
 export enum TokenType {
-  Operator,
-  Identifier,
-  Literal
+  Number = "Number",
+  String = "String",
+  Identifier = "Identifier",
+  Keyword = "Keyword",
+  Punctuation = "Punctuation",
+  LeftParen = "LeftParen",
+  RightParen = "RightParen",
+  EOF = "EOF",
 }
-
-export interface Token {
-  type: TokenType,
-  value: string
-}
-
-export type TokenList = Array<Token>
